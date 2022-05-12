@@ -1,0 +1,42 @@
+.university{
+    margin-left: 20px !important;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#students{
+    background-color: antiquewhite;
+    padding: 20px;
+    border: 2px solid rgb(202, 202, 202);
+}
+
+#professors{
+    background-color: aliceblue;
+    padding: 20px;
+    border: 2px solid rgb(196, 196, 196);
+}
+
+#directions{
+    background-color: rgb(242, 255, 240);
+    padding: 20px;
+    border: 2px solid rgb(196, 196, 196);
+}
+
+#faculty{
+    background-color: rgb(245, 253, 198);
+    padding: 20px;
+    border: 2px solid rgb(196, 196, 196);
+}
+
+.filter--row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.find{
+    margin-left: 20px;
+}

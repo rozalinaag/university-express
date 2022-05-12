@@ -1,0 +1,14 @@
+<input list="character" type="text" name="faculty" placeholder="Физико-технический">
+<datalist id="character">
+    {{#if faculties.length}}
+    <ul>
+        {{#each faculties}}
+        <li class="todo">
+            <option value={{ name }}></option>
+        </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <option value="Нет факультетов"></option>
+    {{/if}}
+</datalist>

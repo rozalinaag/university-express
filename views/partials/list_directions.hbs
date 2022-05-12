@@ -1,0 +1,11 @@
+{{#if directions.length}}
+<ul>
+    {{#each directions}}
+    <li class="todo">
+        {{ name }}
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+<p>Нет направлений</p>
+{{/if}}

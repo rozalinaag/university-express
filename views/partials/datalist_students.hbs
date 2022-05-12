@@ -1,0 +1,16 @@
+<input list="character2" type="text" name="student" placeholder="Иван Иванов">
+<datalist id="character2">
+    <div id="students">
+        {{#if students.length}}
+        <ul>
+            {{#each students}}
+            <li class="todo">
+                <option value="{{ name }} {{ surname }}"></option>
+            </li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p>Нет студентов</p>
+        {{/if}}
+    </div>
+</datalist>

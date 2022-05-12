@@ -1,0 +1,11 @@
+{{#if students.length}}
+<ul>
+    {{#each students}}
+    <li class="todo">
+        {{ this.name }} {{ this.surname }}
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+<p>Нет студентов</p>
+{{/if}}

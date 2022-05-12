@@ -1,0 +1,11 @@
+{{#if faculties.length}}
+<ul>
+    {{#each faculties}}
+    <li class="todo">
+        {{ name }}
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+<p>Нет факультетов</p>
+{{/if}}

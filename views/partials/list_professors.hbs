@@ -1,0 +1,11 @@
+{{#if professors.length}}
+<ul>
+    {{#each professors }}
+    <li class="todo">
+        {{ name }} {{ surname }}
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+<p>Нет преподавателей</p>
+{{/if}}

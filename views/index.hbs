@@ -1,0 +1,49 @@
+<div id="filter">
+    <h5>Фильтр поиска:</h5>
+    <form action="/" method="POST">
+        <div class="filter--row">
+            <div class="input-field">
+                <h6><strong>Студент:</strong></h6>
+                {{>datalist_students}}
+            </div>
+            <div class="input-field">
+                <h6><strong>Профессор:</strong></h6>
+                {{>datalist_professors}}
+            </div>  
+            <div class="input-field">
+                <h6><strong>Факультет:</strong></h6>
+                {{>datalist_faculties}}
+            </div>
+            <div class="input-field">
+                <h6><strong>Направление:</strong></h6>
+                {{>datalist_directions}}
+            </div> 
+        </div>
+        <button type="submit" class="btn find"> Найти </button>
+    </form>
+
+</div>
+<div class="columns">
+    <div id="students">
+        <h4>Список студентов</h4>
+        {{>list_students}}
+    </div>
+    <div id="directions">
+        <h4>Список направлений</h4>
+        {{>list_directions}}
+    </div>
+    <div id="faculty">
+        <h4>Список факультетов</h4>
+        {{>list_faculties}}
+    </div>
+    <div id="professors">
+        <h4>Список профессоров</h4>
+        {{>list_professors}}
+    </div>
+</div>
+
+<script>
+    function ala() {
+        alert("hello"); //
+    }
+</script>

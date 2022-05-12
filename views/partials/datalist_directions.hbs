@@ -1,0 +1,14 @@
+<input list="character4" type="text" name="direction" placeholder="Информационные системы и технологии">
+<datalist id="character4">
+    {{#if directions.length}}
+    <ul>
+        {{#each directions}}
+        <li class="todo">
+            <option value={{ name }}></option>
+        </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <option value="Нет направлений"></option>
+    {{/if}}
+</datalist>
