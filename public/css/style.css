@@ -40,3 +40,41 @@
 .find{
     margin-left: 20px;
 }
+
+.discription{
+    display: flex;
+    background-color: aliceblue;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.name{
+    margin-right: 10px;
+    font-weight: 200;
+}
+
+.create_delete_change{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 100%;
+
+}
+
+.create_delete_change a{
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.create_professor{
+    background-color: beige;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.create_student{
+    background-color: rgb(248, 225, 199);
+    padding: 20px;
+    margin-bottom: 10px;
+}

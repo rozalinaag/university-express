@@ -1,10 +1,39 @@
-<form action="/create" method="POST">
-    <h2>Create todo</h2>
-    <div class="input-field">
-        <input type="text" name="title">
-        <label>ToDo rirle</label>
-    </div>
-
-    <button type = "submit" class="btn"> Изменения </button>
+<form action="/create_student" method="POST">
+        <h3>Добавить нового студента</h3>
+        <div class="create_student">
+            <div class="input-field">
+                <h6><strong>Студент:</strong></h6>
+                <input type="text" name="name" placeholder="Иван">
+                <input type="text" name="surname" placeholder="Иванов">
+            </div>  
+            <div class="input-field">
+                <h6><strong>Факультет:</strong></h6>
+                {{>datalist_faculties}}
+            </div>
+            <div class="input-field">
+                <h6><strong>Направление:</strong></h6>
+                {{>datalist_directions}}
+            </div> 
+        </div>
+        <button type="submit" class="btn"> Добавить </button>
 </form>
+
+<form action="/create_professor" method="POST">
+        <h3>Добавить нового преподавателя</h3>
+        <div class="create_professor">
+            <div class="input-field">
+                <h6><strong>Профессор:</strong></h6>
+                <input type="text" name="name" placeholder="Иван">
+                <input type="text" name="surname" placeholder="Иванов">
+            </div>  
+            <div class="input-field">
+                <h6><strong>Факультет:</strong></h6>
+                {{>datalist_faculties}}
+            </div>
+        </div>
+        <button type="submit" class="btn"> Добавить </button>
+</form>
+
+<br>
+<br>
 
